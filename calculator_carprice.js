@@ -59,6 +59,15 @@ function calcPrice() {
             break;
     }
 
+    console.log(brand, typeof (brand));
+    console.log(year, typeof (year));
+    console.log(mile, typeof (mile));
+    console.log(body, typeof (body));
+    console.log(fuel, typeof (fuel));
+    console.log(engine, typeof (engine));
+    console.log(power, typeof (power));
+    console.log(trans, typeof (trans));
+
     let sum = 1000 * ((brand + year + mile + trans) * (body + fuel + power)) / engine;
     sum = Math.round(sum);
     alert(`Предполагаемая стоимость автомобиля:  ` + (sum) + `  р.`);
